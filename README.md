@@ -1,14 +1,24 @@
-lib/
+lib/ 
 ├── main.dart
+
 ├── theme/
+
 │   ├── light_theme.dart
+
 │   └── dark_theme.dart
+
 ├── pages/
+
 │   ├── splash_screen.dart
+
 │   ├── onboarding_page.dart
+
 │   └── login_page.dart
+
 ├── widgets/
+
 │   ├── login_text_form_field.dart
+
 │   └── custom_header.dart
 
 # Flutter App – Splash, Onboarding, Login e Tema Dinâmico
