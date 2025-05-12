@@ -1,16 +1,16 @@
 Estrutura das pastas
-lib/
-├── main.dart
-├── theme/
-│   ├── light_theme.dart
-│   └── dark_theme.dart
-├── pages/
-│   ├── splash_screen.dart
-│   ├── onboarding_page.dart
-│   └── login_page.dart
-├── widgets/
-│   ├── login_text_form_field.dart
-│   └── custom_header.dart
+lib/ 
+ ├── main.dart
+ ├── theme/
+ │   ├── light_theme.dart
+ │   └── dark_theme.dart
+ ├── pages/
+ │   ├── splash_screen.dart
+ │   ├── onboarding_page.dart
+ │   └── login_page.dart
+ ├── widgets/
+ │   ├── login_text_form_field.dart
+ │   └── custom_header.dart
 
 # Flutter App – Splash, Onboarding, Login e Tema Dinâmico
 
@@ -60,8 +60,8 @@ Controlados dinamicamente por um `ThemeController` com `ValueNotifier`.
 1. **Clone o repositório:**
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repo.git
-cd seu-repo
+git clone https://github.com/TheVingance/atividade4-autenticacao
+cd atividade4-autenticacao
 
 
  Dependências principais
