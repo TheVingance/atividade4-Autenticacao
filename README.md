@@ -1,3 +1,5 @@
+ESTRUTURA DE PASTAS
+
 lib/ 
 ├── main.dart
 
