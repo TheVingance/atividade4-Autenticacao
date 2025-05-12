@@ -1,4 +1,4 @@
-ESTRUTURA DE PASTAS
+# ESTRUTURA DAS PASTAS
 
 lib/ 
 ├── main.dart
@@ -71,7 +71,7 @@ Controlados dinamicamente por um `ThemeController` com `ValueNotifier`.
 1. **Clone o repositório:**
 
 ```bash
-git clone https://github.com/TheVingance/atividade4-autenticacao
+git clone https://github.com/TheVingance/atividade4-autenticacao.git
 cd atividade4-autenticacao
 
 
