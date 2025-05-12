@@ -1,5 +1,3 @@
-Estrutura das pastas
-
 lib/
 ├── main.dart
 ├── theme/
