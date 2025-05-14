@@ -17,9 +17,8 @@ class OnboardingPage extends StatelessWidget {
     return Scaffold(
       body: PageView.builder(
         itemCount: titles.length,
-        itemBuilder:
-            (context, index) =>
-                _buildPage(context, titles[index], descs[index], icons[index]),
+        itemBuilder: (context, index) =>
+            _buildPage(context, titles[index], descs[index], icons[index], index == titles.length - 1),
       ),
     );
   }
@@ -29,16 +28,17 @@ class OnboardingPage extends StatelessWidget {
     String title,
     String desc,
     IconData icon,
+    bool isLastPage, // Adiciona parâmetro para saber se é a última tela
   ) {
     return Padding(
       padding: const EdgeInsets.all(32),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Icon(
-            Icons.auto_awesome, // ícone personalizado escolhido
+          Icon(
+            icon, // ícone que será exibido na tela
             size: 64,
-            color: Colors.deepPurple, // cor personalizada
+            color: Colors.deepPurple,
           ),
           Text(
             title,
@@ -51,7 +51,7 @@ class OnboardingPage extends StatelessWidget {
             style: const TextStyle(fontSize: 18),
           ),
           const SizedBox(height: 40),
-          if (title == "Facilidade") // Mostra botão apenas na última tela
+          if (isLastPage) // Se for a última página, mostra o botão
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(
@@ -70,6 +70,15 @@ class OnboardingPage extends StatelessWidget {
                 style: TextStyle(fontSize: 16),
               ),
             ),
+          const SizedBox(height: 20),
+          Text(
+            'Arraste para o lado para navegar',
+            style: TextStyle(
+              fontSize: 16,
+              color: Colors.grey,
+              fontStyle: FontStyle.italic,
+            ),
+          ),
         ],
       ),
     );
