@@ -1,3 +1,7 @@
+# Integrantes do Grupo F
+- Henrique Triches Iurkiv
+- Lucca Gomes Barreto
+  
 # ESTRUTURA DAS PASTAS
 
 lib/ 
