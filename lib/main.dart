@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 import 'theme/light_theme.dart';
 import 'theme/dark_theme.dart';
 import 'theme/theme_controller.dart';
@@ -7,7 +8,14 @@ import 'splash/animated_splash.dart';
 import 'onboarding/onboarding_page.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-void main() {
+void main() async {
+WidgetsFlutterBinding.ensureInitialized();
+
+  await Supabase.initialize(
+    url: 'https://epltoawcvmwirypvqdbk.supabase.co', 
+    anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVwbHRvYXdjdm13aXJ5cHZxZGJrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDg1Mjg4MzYsImV4cCI6MjA2NDEwNDgzNn0._LgykBUfrMmlcNpK_QgCzqfNOT9zHADuHTmK5sSR4ZI',                  // ✅ Coloque sua anon key
+  );
+
   runApp(MyApp());
 }
 
